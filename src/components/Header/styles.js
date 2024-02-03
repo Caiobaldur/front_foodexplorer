@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div `
+export const Container = styled.header`
   
   background-color: ${({theme}) => theme.COLORS.DARK_700};
   width: 100%;
@@ -10,14 +10,14 @@ export const Container = styled.div `
     padding: 2.4rem 12.3rem;  
     align-items: center;
     justify-content: center;
+    gap: 3.2rem;
   }
   
-  .content > img:nth-child(1) {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    padding-right: 1rem;
-    
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1.1rem;
   }
 
   .search {
@@ -29,7 +29,7 @@ export const Container = styled.div `
   .search label input {
     background: url(../src/assets/VectorSearch.svg) no-repeat;
     background-position: 14rem center;
-    padding: 1.2rem 1.4rem;
+    padding: 1.6rem 13.7rem;
     width: 58rem;
     background-color: ${({theme}) => theme.COLORS.DARK_900};
     color: ${({theme}) => theme.COLORS.LIGHT_100};
@@ -42,24 +42,73 @@ export const Container = styled.div `
     font-family: ${({theme}) => theme.FONTS.Primary};
   }
 
-  .search > button {
-    padding: 1.2rem 3.2rem;
-    background-color: ${({theme}) => theme.COLORS.TOMATO_100};
-    border: none;
+  .final {
     display: flex;
-    color: ${({theme}) => theme.COLORS.LIGHT_100};
     align-items: center;
-    gap: 1.1rem;
-  }
-
-  .content > a {
-    padding-right: 0rem;
-    background: none;
-    border: none;
-    padding-left: 3.2rem;
+    gap: 3.2rem;
   }
   
+@media (max-width: 1024px) {
+  .content {
+    justify-content: space-between;
+  }
 
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .search label input {
+    display: none;
+  }
+
+  .final {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+
+
+ }
 
   
+`;
+
+export const Logout = styled.button`
+  
+  > svg {
+    color: ${({theme}) => theme.COLORS.LIGHT_100};
+    font-size: 2.2rem;
+    margin-top: .5rem;
+  }
+
+  @media (max-width: 500px) {
+    display: none;
+
+}
+
+`;
+
+export const MobileReceipt = styled.button`
+  
+  > svg {
+    color: ${({theme}) => theme.COLORS.LIGHT_100};
+    font-size: 2.6rem;
+    margin-top: .5rem;
+    
+  }
+
+  @media (max-width: 2560px){
+    display: none;
+  }
+
+  @media (max-width: 500px) {
+    display: block;
+
+}
+
 `;

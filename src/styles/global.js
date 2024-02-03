@@ -27,6 +27,7 @@ export default createGlobalStyle `
 
   button, input, textarea {
     font-family: 'Poppins', sans-serif;
+    border-radius: .5rem;
   }
 
   a {
@@ -37,6 +38,9 @@ export default createGlobalStyle `
   button, a {
     cursor: pointer;
     transition: filter 0.2s;
+    border: none;
+    background: none;
+    border-radius: .5rem;
   }
 
   button:hover, a:hover {
