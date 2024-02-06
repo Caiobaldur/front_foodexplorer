@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-
-export default createGlobalStyle `
+export default createGlobalStyle`
 
   * {
     margin: 0;
@@ -11,8 +10,8 @@ export default createGlobalStyle `
   }
 
   body {
-    background-color: ${({theme}) => theme.COLORS.DARK_400};
-    color: ${({theme}) => theme.COLORS.LIGHT_100};
+    background-color: ${({ theme }) => theme.COLORS.DARK_400};
+    color: ${({ theme }) => theme.COLORS.LIGHT_100};
 
     -webkit-font-smoothing: antialiased;
   }
@@ -21,27 +20,25 @@ export default createGlobalStyle `
     font-size: 62.5%;
   }
 
-  input, textarea {
-    border: none;
-  }
-
   button, input, textarea {
-    font-family: 'Poppins', sans-serif;
+    font-family: ${({ theme }) => theme.FONTS.Primary};
+    font-weight: 500;
     border-radius: .5rem;
+    border: none;
+    background: none;
+    transition: filter 0.2s;
+
+  }
+  button {
+    cursor: pointer;
   }
 
   a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
   }
 
-  button, a {
-    cursor: pointer;
-    transition: filter 0.2s;
-    border: none;
-    background: none;
-    border-radius: .5rem;
-  }
 
   button:hover, a:hover {
     filter: brightness(0.9);
@@ -56,4 +53,4 @@ export default createGlobalStyle `
     max-width: 100%;    
   }
 
-`; 
+`;
