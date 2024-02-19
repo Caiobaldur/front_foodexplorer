@@ -20,6 +20,10 @@ export default createGlobalStyle`
     font-size: 62.5%;
   }
 
+  h1, p {
+    font-family: ${({ theme }) => theme.FONTS.Primary};
+  }
+
   button, input, textarea {
     font-family: ${({ theme }) => theme.FONTS.Primary};
     font-weight: 500;
