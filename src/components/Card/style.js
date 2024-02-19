@@ -59,24 +59,24 @@ export const Container = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 75rem;
+    width: 70rem;
 
     .text {
-    width: 73%;
+    width: 70%;
     text-align: left;
   }
     
     .image {
-      width: 85rem;
+      width: 60rem;
     }
 
     h1 {
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 600;
   }
 
   p {
-    font-size:1.9rem;
+    font-size:1.7rem;
     font-weight: 400;
   }
   }
@@ -84,7 +84,7 @@ export const Container = styled.div`
   @media (max-width: 500px) {
     margin-top: 5.4rem;
     max-height: 12rem;
-    box-shadow: inset 15px 3px 0px 0px ${({ theme }) => theme.COLORS.DARK_400};
+    box-shadow: inset 19px 0px 0px 0px ${({ theme }) => theme.COLORS.DARK_400};
     max-width: 37.6rem;
     height: fit-content;
     position: relative;
@@ -114,5 +114,29 @@ export const Container = styled.div`
     line-height: 1.68rem;
     font-family: ${({ theme }) => theme.FONTS.Secondary};
   }
+  }
+
+  @media (max-width: 375px) {
+    max-width: 33rem;
+    
+
+.text {
+width: 75%;
+text-align: left;
+}
+
+.image {
+  width: 20rem;
+}
+
+h1 {
+font-size: 1.4rem;
+font-weight: 600;
+}
+
+p {
+font-size:1.1rem;
+font-weight: 400;
+}
   }
 `;

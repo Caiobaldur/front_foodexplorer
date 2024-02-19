@@ -75,13 +75,13 @@ export const Container = styled.header`
       padding: 5.6rem 2.8rem 2.4rem 2.8rem;
       align-items: center;
       justify-content: center;
-      gap: 7.4rem;
+      gap: 6rem;
     }
 
     .logo {
       align-items: center;
       justify-content: center;
-      margin-right: 0px;
+      transform: translateY(-15%);
     }
 
     .search {
@@ -92,6 +92,12 @@ export const Container = styled.header`
       display: none;
     }
 
+  }
+
+  @media (max-width: 400px) {
+    .content {
+      gap: 3.9rem;
+    }
   }
 `;
 
