@@ -8,9 +8,6 @@ import { DishCard } from "../../components/DishCard";
 const PER_PAGE_MOBILE = 2
 const PER_PAGE_DESKTOP = 4
 
-
-
-
 export function App() {
   
   const slideOptions = {
@@ -19,7 +16,7 @@ export function App() {
       perMove: 2,
       updateOnMove: true,
       slideFocus: true,
-      gap    : '2.7rem',
+      gap    : '20.7rem',
       start: 1,
 
       width: '1122px',
@@ -27,6 +24,7 @@ export function App() {
       breakpoints:{
 
         500: {
+          start: 0,
           width: '436px',
           perPage: PER_PAGE_MOBILE,
           gap    : '1.6rem',
@@ -45,8 +43,8 @@ export function App() {
       <Header/>
       <Card/>
       
-      <Splide options={slideOptions}>
         <h2 className="aria-labelledby">Refeição</h2>
+      <Splide options={slideOptions}>
         <SplideSlide>
           <DishCard>
             
