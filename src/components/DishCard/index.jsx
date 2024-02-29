@@ -18,9 +18,10 @@ export function DishCard() {
       <div className="dishDescription">
         <img src="./src/assets/Mask_group.png" alt="" />
         <h3>Salada Ravanello &gt;</h3>
-        <p>Rabanetes, folhas verdes e molho agridoce salpicados com gergelim</p>
+        <p>Rabanetes, folhas verdes e molho agridoce salpicados com gergelim.</p>
         <span className="dishPrice">R$ 49,97</span>
           <div className="wrap-order">
+            <div className="order_varyButtons">
             <RemoveButton>
               <IoIosRemove/>
             </RemoveButton>
@@ -28,6 +29,7 @@ export function DishCard() {
               <AddButton>
                 <IoIosAdd/>
               </AddButton>
+            </div>
               <IncludeButton title="incluir"/>
           </div>
       </div>
